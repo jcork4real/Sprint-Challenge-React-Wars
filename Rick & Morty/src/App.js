@@ -20,8 +20,9 @@ const App = () => {
       <Container className="App">
         <h1 className="Header">Rick & Morty</h1>        
         <Row> 
-        {character.map(el => {
-        return <Characters {...el}/>
+        {character.map(element => {
+          // ..... spread /rest operator  to pass entire elements
+        return <Characters {...element}/>
         })}
         </Row>
      </Container>
